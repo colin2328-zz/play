@@ -1,6 +1,8 @@
-import json, csv
+import json, csv, sys
 
-minutes_data = csv.DictReader(open('export_minutes_usage_period_236160.csv')) #locu id is 1, foursquare is 2
+csv_file = sys.argv[1]
+
+minutes_data = csv.DictReader(open(csv_file)) #locu id is 1, foursquare is 2
 
 john = 0
 ross = 0
